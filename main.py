@@ -198,7 +198,7 @@ async def giveaway(interaction: discord.Interaction, prize: str, duration: float
         for winner_id in winner_ids:
             winner = await giveaway_bot.fetch_user(winner_id)
             try:
-                await winner.send(f"🎉 恭喜你于服务器 **电子魅魔** 中赢得了 **{prize}**!\n兑换码是: {daily_code}")
+                await winner.send(f"🎉 恭喜你于服务器 **电子魅魔** 中赢得了 **{prize}**!\n兑换码是: **{daily_code}**")
             except discord.Forbidden:
                 await message.channel.send(f"无法私信通知 <@{winner_id}>, 请联系客服哦~")
 
