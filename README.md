@@ -2,6 +2,13 @@
 
 ## 想怎么用就怎么用
 
+### 预览
+![指令输入](https://github.com/user-attachments/assets/26a023a5-4d33-4f68-b23a-964eaa32b2ce)
+![抽奖实测](https://github.com/user-attachments/assets/561d2341-cb1b-44f0-a994-8a3af2b2003c)
+![中奖私信](https://github.com/user-attachments/assets/c25dee90-3522-4422-b4d2-4a846cd5a85e)
+
+
+
 ### 食用方法
 
 1. 声明：本文件夹只包含4个文件
