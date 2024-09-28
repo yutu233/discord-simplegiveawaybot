@@ -18,6 +18,9 @@ TOKEN = os.getenv('TOKEN') # TOKEN是机器人的唯一标识符, 用于在API�
 intents = discord.Intents.default() # 指定机器人监听的事件
 intents.message_content = True # 允许机器人访问消息内容
 
+# 每日兑换码
+daily_code = 'SQ2024'
+
 # 创建自定义的 Bot 类
 class GiveawayBot(commands.Bot):
     def __init__(self):
@@ -195,7 +198,7 @@ async def giveaway(interaction: discord.Interaction, prize: str, duration: float
         for winner_id in winner_ids:
             winner = await giveaway_bot.fetch_user(winner_id)
             try:
-                await winner.send(f"🎉 恭喜你于服务器 **电子魅魔** 中赢得了 **{prize}**!\n兑换码是: SQ2024")
+                await winner.send(f"🎉 恭喜你于服务器 **电子魅魔** 中赢得了 **{prize}**!\n兑换码是: {daily_code}")
             except discord.Forbidden:
                 await message.channel.send(f"无法私信通知 <@{winner_id}>, 请联系客服哦~")
 
